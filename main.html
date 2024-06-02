@@ -8,85 +8,53 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h1>Signup Form Car</h1>
-<p>Create a Signup form with the following HTML elements:</p>
-<table border=“1” cellpadding=“5” cellspacing=“0”>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Required</th>
-<th>ID</th>
-<th>Placeholder</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Name</td>
-<td>Text</td>
-<td>Yes</td>
-<td>name</td>
-<td>Name</td>
-</tr>
-<tr>
-<td>Email</td>
-<td>Email</td>
-<td>Yes</td>
-<td>email</td>
-<td>Email</td>
-</tr>
-<tr>
-<td>Gender</td>
-<td>Radio</td>
-<td>Yes</td>
-<td>gender_m, gender_f</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Car Brands</td>
-<td>Select</td>
-<td>Yes</td>
-<td>cars</td>
-<td>–Please choose an option–</td>
-</tr>
-<tr>
-<td>Age</td>
-<td>Number</td>
-<td>Yes</td>
-<td>age</td>
-<td>Age</td>
-</tr>
-<tr>
-<td>DOB</td>
-<td>Date</td>
-<td>Yes</td>
-<td>dob</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Phone Number</td>
-<td>Tel</td>
-<td>No</td>
-<td>tel</td>
-<td>xxx-xxx-xxxx</td>
-</tr>
-<tr>
-<td>Password</td>
-<td>Password</td>
-<td>Yes</td>
-<td>password</td>
-<td>Password</td>
-</tr>
-<tr>
-<td>I agree to the TOS</td>
-<td>Checkbox</td>
-<td>Yes</td>
-<td>tos</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+<form method='post'> 
+  <label for='name'>Name</label>
+	<input type='text' id='name' placeholder='Name' required><br>
+
 	
+  <label for='email'>Email</label>
+	<input type='Email' id='email' placeholder='Email' required>
+<br>
+	
+  <label for='gender_m'>Male</label>
+	<input type='Radio' id='gender_m' placeholder='-' required>
+	<br>
+
+	 <label for='gender_f'>Female</label>
+	<input type='Radio' id='gender_f' placeholder='-' required>
+	<br>
+
+
+
+  <label for='cars'>Car Brands</label>
+	<input type='Select' id='cars' placeholder='--Please choose an option--' required>
+	<br>
+
+	
+  <label for='age'>Age</label>
+	<input type='Number' id='age' placeholder='Age' required><br>
+
+	
+  <label for='dob'>DOB</label>
+	<input type='Date' id='dob' placeholder='-' required>
+	<br>
+
+  <label for='tel'>Phone Number</label>
+	<input type='Tel' id='tel' placeholder='xxx-xxx-xxxx'>
+	<br>
+
+	
+  <label for='password'>Password</label>
+	<input type='Password' id='password' placeholder='Password' required>
+	<br>
+
+	
+  <label for='tos'>I agree to the TOS</label>
+	<input type='Checkbox' id='tos' placeholder='-' required>
+	<br>
+	<button type='submit'> Submit</button>
+</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
